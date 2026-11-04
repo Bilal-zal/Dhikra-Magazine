@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dhikra-magazine | مجلة ذكرى</title>
+    <link rel="stylesheet" href="T.css">
+</head>
+<body class="intro-active">
+
+    <!-- المقدمة السينمائية (فيديو بصوت) -->
+    <div id="intro" aria-label="مقدمة مجلة ذكرى">
+        <video id="intro-video" playsinline preload="auto">
+            <source src="intro.mp4.mp4" type="video/mp4">
+        </video>
+        <div id="intro-gate">
+            <h1 class="intro-title">مجلة ذكرى</h1>
+            <p class="intro-hint">للحصول على أفضل تجربة</p>
+            <button id="enter-intro" type="button">ادخل</button>
+        </div>
+        <button id="skip-intro" type="button">تخطي ←</button>
+    </div>
+
+    <!-- القوائم -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#articles">المقالات</a></li>
+                <li><a href="#about">عن المجلة</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- قسم الترحيب -->
+        <section id="home" class="hero">
+            <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="image2.jpg">
+                <source src="hero.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="hero-kicker">الحروب التاريخية</p>
+                <h1 class="hero-title">مجلة ذكرى</h1>
+                <p class="hero-sub">منصة تهتم بنشر المقالات والمحتوى المتعلق بالحروب التاريخية.</p>
+                <a href="#articles" class="btn">ابدأ القراءة</a>
+            </div>
+        </section>
+
+        <!-- قسم عن المجلة -->
+        <section id="about">
+            <div>
+                <h2>عن المجلة</h2>
+                <p>مجلة ذكرى هي منصة تهتم بنشر المقالات والمحتوى المتعلق بالحروب التاريخية. هدفنا هو تقديم محتوى قيم ومفيد للقراء المهتمين بهذا المجال.</p>
+            </div>
+        </section>
+
+        <!-- قسم المقالات (البطاقات) -->
+        <section class="articles-section" id="articles">
+            <h2>أحدث المقالات</h2>
+
+            <div class="articles-grid">
+
+                <article class="card" id="article-1">
+                    <figure>
+                        <img src="image1.jpg" alt="جنود بريطانيون في خندق ألماني أثناء معركة السوم عام 1916" loading="lazy">
+                        <figcaption>جنود بريطانيون في خندق ألماني أثناء معركة السوم عام 1916 — <a href="https://commons.wikimedia.org/wiki/File:Cheshire_Regiment_trench_Somme_1916.jpg" target="_blank" rel="noopener noreferrer">المصدر: ويكيميديا كومنز</a></figcaption>
+                    </figure>
+                    <div class="card-content">
+                        <h3>الحرب العالمية الأولى (1914 – 1918)</h3>
+                        <p>الحرب الكبرى التي كانت أشد حرب دموية عرفها العالم حتى ذلك الوقت.</p>
+                        <a href="first-world-war.html">اقرأ المقال</a>
+                    </div>
+                </article>
+
+                <article class="card" id="article-2">
+                    <figure>
+                        <img src="image2.jpg" alt="جنود في زورق إنزال يقتربون من شاطئ أوماها يوم الإنزال، 6 يونيو 1944 (البحرية الأمريكية)" loading="lazy">
+                        <figcaption>جنود في زورق إنزال يقتربون من شاطئ أوماها يوم الإنزال، 6 يونيو 1944 (البحرية الأمريكية) — <a href="https://commons.wikimedia.org/wiki/File:Approaching_Omaha.jpg" target="_blank" rel="noopener noreferrer">المصدر: ويكيميديا كومنز</a></figcaption>
+                    </figure>
+                    <div class="card-content">
+                        <h3>الحرب العالمية الثانية (1939 – 1945)</h3>
+                        <p>أكبر صراع مسلح في التاريخ من حيث الاتساع وعدد الضحايا.</p>
+                        <a href="second-world-war.html">اقرأ المقال</a>
+                    </div>
+                </article>
+
+                <article class="card" id="article-3">
+                    <figure>
+                        <img src="image3.jpg" alt="جدار برلين عند بوابة براندنبورغ" loading="lazy">
+                        <figcaption>جدار برلين عند بوابة براندنبورغ، نوفمبر 1989 (تصوير: Sue Ream، رخصة CC BY 3.0) — <a href="https://commons.wikimedia.org/wiki/File:BerlinWall-BrandenburgGate.jpg" target="_blank" rel="noopener noreferrer">المصدر: ويكيميديا كومنز</a></figcaption>
+                    </figure>
+                    <div class="card-content">
+                        <h3>الحرب الباردة (1947 – 1991)</h3>
+                        <p>تنافس سياسي وعسكري وأيديولوجي بين الولايات المتحدة والاتحاد السوفييتي.</p>
+                        <a href="cold-war.html">اقرأ المقال</a>
+                    </div>
+                </article>
+
+                <article class="card" id="article-4">
+                    <figure>
+                        <img src="image4.jpg" alt="اغتيال الأرشيدوق فرانز فرديناند في سراييفو، 1914" loading="lazy">
+                        <figcaption>اغتيال الأرشيدوق فرانز فرديناند في سراييفو، 1914 — <a href="https://commons.wikimedia.org/wiki/File:Assassination_of_Archduke_Franz_Ferdinand_1914.jpg" target="_blank" rel="noopener noreferrer">المصدر: ويكيميديا كومنز</a></figcaption>
+                    </figure>
+                    <div class="card-content">
+                        <h3>أسباب الحرب العالمية الأولى</h3>
+                        <p>توترات متراكمة منذ عقود أشعلتها حادثة اغتيال في سراييفو.</p>
+                        <a href="causes-of-world-war-one.html">اقرأ المقال</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer id="contact">
+        <p>&copy; 2026 مجلة ذكرى الرقمية. جميع الحقوق محفوظة.</p>
+
+        <p>تواصل معنا على البريد الإلكتروني:
+            <a href="mailto:bomew18@icloud.com">bomew18@icloud.com</a>
+        </p>
+
+        <p>تواصل معنا على وسائل التواصل الاجتماعي:</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1CWN8EevaB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://x.com/bl18hd" target="_blank" rel="noopener noreferrer">Twitter</a> |
+            <a href="https://www.instagram.com/blajv5" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://github.com/Bilal-zal" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <p>من اعداد الطالب <a href="https://www.linkedin.com/in/bilal-ali-muhammad-b646a3439/" target="_blank" rel="noopener noreferrer">بلال علي محمد العقيدي.</a></p>
+
+        <p>شكراً لزيارتك لمجلة ذكرى الرقمية. نتمنى لك تجربة ممتعة ومفيدة.</p>
+    </footer>
+
+
+    <script>
+        (function () {
+            var intro = document.getElementById('intro');
+            var video = document.getElementById('intro-video');
+            var gate = document.getElementById('intro-gate');
+            var enterBtn = document.getElementById('enter-intro');
+            var skipBtn = document.getElementById('skip-intro');
+            if (!intro) return;
+
+            function closeIntro() {
+                if (intro.classList.contains('intro-done')) return;
+                try { video.pause(); } catch (e) {}
+                intro.classList.add('intro-done');
+                document.body.classList.remove('intro-active');
+                setTimeout(function () { intro.style.display = 'none'; }, 1200);
+            }
+
+            // إذا شاف الزائر المقدمة في هذه الجلسة لا تظهر مرة ثانية
+            if (sessionStorage.getItem('introSeen')) {
+                intro.style.display = 'none';
+                document.body.classList.remove('intro-active');
+                return;
+            }
+
+            // إذا ملف الفيديو غير موجود أو تعذر تشغيله: ادخل الموقع مباشرة
+            video.addEventListener('error', closeIntro, true);
+            var src = video.querySelector('source');
+            if (src) src.addEventListener('error', closeIntro);
+
+            enterBtn.addEventListener('click', function () {
+                sessionStorage.setItem('introSeen', '1');
+                gate.classList.add('gate-hidden');
+                video.classList.add('playing');
+                video.muted = false;
+                video.volume = 1;
+                var playing = video.play();
+                if (playing && playing.catch) { playing.catch(closeIntro); }
+            });
+
+            video.addEventListener('ended', closeIntro);
+            skipBtn.addEventListener('click', function () {
+                sessionStorage.setItem('introSeen', '1');
+                closeIntro();
+            });
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') { sessionStorage.setItem('introSeen', '1'); closeIntro(); }
+            });
+        })();
+    </script>
+
+</body>
+</html>
